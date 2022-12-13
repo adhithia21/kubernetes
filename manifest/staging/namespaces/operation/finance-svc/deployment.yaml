@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finance-svc
+spec:
+  selector:
+    matchLabels:
+      app: finance-svc
+  template:
+    metadata:
+      labels:
+        app: finance-svc
+    spec:
+      containers:
+      - name: finance-svc
+        image: nginx:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+        envFrom:
+          - secretRef:
+              name: finance-svc-secret
