@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - ../../../../helm/ingress-nginx/repository.yaml
+  - ../../../../helm/jetstack/repository.yaml
   - ingress
   - cert-manager
   - demo-adhithia-me.yaml

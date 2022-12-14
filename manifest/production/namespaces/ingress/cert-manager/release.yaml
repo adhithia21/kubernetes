@@ -11,3 +11,5 @@ spec:
         kind: HelmRepository
         name: jetstack
       interval: 1m
+  values:
+    installCRDs: true
