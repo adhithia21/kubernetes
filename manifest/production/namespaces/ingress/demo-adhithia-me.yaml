@@ -12,6 +12,7 @@ spec:
   tls:
     - hosts:
         - demo.adhithia.me
+      secretName: demo-adhithia-me-cert
   rules:
   - http:
       paths:
