@@ -15,7 +15,8 @@ spec:
     - demo.adhithia.me
     secretName: demo-adhithia-me-cert
   rules:
-  - http:
+  - host: demo.adhithia.me
+    http:
       paths:
       - pathType: Prefix
         path: "/operation/product"
