@@ -5,3 +5,4 @@ resources:
   - namespace.yaml
   - ../../../../helm/ingress-nginx/repository.yaml
   - ingress
+  - demo-adhithia-me.yaml
