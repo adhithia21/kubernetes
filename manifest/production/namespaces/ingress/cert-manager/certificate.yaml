@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: demo-adhithia-me-cert
+spec:
+  secretName: demo-adhithia-me-cert
+  issuerRef:
+    name: letsencrypt-issuer
+  commonName: 'demo.adhithia.me'
+  dnsNames:
+    - 'demo.adhithia.me'
