@@ -3,4 +3,5 @@ namespace: ingress
 kind: Kustomization
 resources:
   - namespace.yaml
+  - ../../../../helm/ingress-nginx/repository.yaml
   - ingress
