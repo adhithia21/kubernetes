@@ -20,7 +20,7 @@ spec:
             port: 
               number: 80
       - pathType: Prefix
-        path: "/operation/auth"
+        path: "/operation/auth/?(.*)"
         backend:
           service:
             name: auth
