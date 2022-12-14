@@ -7,10 +7,13 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
 spec:
+  tls:
+    - hosts:
+      - demo.adhithia.me
   rules:
-  - host: demo.adhithia.me
-    http:
+  - http:
       paths:
       - pathType: Prefix
         path: "/operation/product"
