@@ -11,9 +11,9 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
-    - hosts:
-        - demo.adhithia.me
-      secretName: demo-adhithia-me-cert
+  - hosts:
+    - demo.adhithia.me
+    secretName: demo-adhithia-me-cert
   rules:
   - http:
       paths:
