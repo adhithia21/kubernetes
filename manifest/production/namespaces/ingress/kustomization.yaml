@@ -3,6 +3,7 @@ namespace: ingress
 kind: Kustomization
 resources:
   - namespace.yaml
+  - ../../module/gcr-credential.yaml
   - ../../../../helm/ingress-nginx/repository.yaml
   - ../../../../helm/jetstack/repository.yaml
   - ingress

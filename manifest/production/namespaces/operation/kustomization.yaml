@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: operation
 resources:
   - namespaces.yaml
+  - ../../module/gcr-credential.yaml
   - product
   - auth
   - goapp
