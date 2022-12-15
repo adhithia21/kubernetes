@@ -30,7 +30,7 @@ spec:
   tls:
   - hosts:
     - demo.adhithia.me
-    secretName: letsencrypt-production
+    secretName: letsencrypt-production-secret
 ---
 apiVersion: v1
 kind: Service
