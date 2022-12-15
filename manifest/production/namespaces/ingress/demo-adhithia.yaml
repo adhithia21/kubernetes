@@ -4,6 +4,9 @@ metadata:
   name: demo-adhithia-ingress
   labels:
     name: demo-adhithia-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - host: demo.adhithia.me
