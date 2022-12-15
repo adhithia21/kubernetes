@@ -6,9 +6,6 @@ metadata:
 spec:
   imageRepositoryRef:
     name: goapp
-  filterTags:
-    pattern: '^master-[a-fA-F0-9]+-(?P<ts>.*)'
-    extract: '$ts'
   policy:
     numerical:
       order: asc
