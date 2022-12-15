@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goapp
+spec:
+  selector:
+    matchLabels:
+      app: goapp
+  template:
+    metadata:
+      labels:
+        app: goapp
+    spec:
+      containers:
+      - name: goapp
+        image: asia.gcr.io/studidevops-369306/goapp:1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 8000

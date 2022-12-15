@@ -4,3 +4,4 @@ namespace: frontend
 resources:
   - namespaces.yaml
   - ../../module/gcr-credential.yaml
+  - goapp
