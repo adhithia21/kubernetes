@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-adhithia-ingress
+  labels:
+    name: demo-adhithia-ingress
+spec:
+  rules:
+  - host: demo.adhithia.me
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/core/goapp"
+        backend:
+          service:
+            name: goapp
+            port: 
+              number: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: goapp
+spec:
+  type: ExternalName
+  externalName: goapp.core.svc
