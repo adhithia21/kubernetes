@@ -20,5 +20,5 @@ spec:
     push:
       branch: master
   update:
-    path: ./clusters/production
+    path: ./manifest/production/namespaces
     strategy: Setters
