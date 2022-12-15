@@ -14,8 +14,8 @@ spec:
         branch: master
     commit:
       author:
-        email: fluxcdbot@adhithia.me
-        name: fluxcdbot
+        email: adhithia.irvan2@gmail.com
+        name: adhithia21
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: master
