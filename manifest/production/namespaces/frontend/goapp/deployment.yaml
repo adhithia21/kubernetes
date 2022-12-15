@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: asia.gcr.io/studidevops-369306/goapp:2
+        image: asia.gcr.io/studidevops-369306/goapp:3
         resources:
           limits:
             memory: "128Mi"
