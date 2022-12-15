@@ -5,3 +5,4 @@ resources:
   - ../../module/registry-credential.yaml
   - image-repository
   - image-policy
+  - image-update-automation
