@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: goapp
+  namespace: flux-system
+spec:
+  image: asia.gcr.io/studidevops-369306/goapp
+  interval: 1m0s
+  secretRef:
+    name: gcr-credentials
