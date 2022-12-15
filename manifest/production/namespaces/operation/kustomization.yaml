@@ -6,4 +6,3 @@ resources:
   - ../../module/gcr-credential.yaml
   - product
   - auth
-  - goapp
