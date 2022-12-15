@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: asia.gcr.io/studidevops-369306/goapp:4 # {"$imagepolicy": "flux-system:goapp"}
+        image: asia.gcr.io/studidevops-369306/goapp:5 # {"$imagepolicy": "flux-system:goapp"}
         resources:
           limits:
             memory: "128Mi"
