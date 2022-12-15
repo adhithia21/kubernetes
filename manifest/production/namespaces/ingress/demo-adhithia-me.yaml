@@ -27,6 +27,13 @@ spec:
             name: auth
             port: 
               number: 80
+      - pathType: Prefix
+        path: "/operation/goapp"
+        backend:
+          service:
+            name: goapp
+            port: 
+              number: 80
   tls:
   - hosts:
     - demo.adhithia.me
@@ -47,3 +54,11 @@ metadata:
 spec:
   type: ExternalName
   externalName: auth.operation.svc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: goapp
+spec:
+  type: ExternalName
+  externalName: goapp.frontend.svc
